@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 function App() {
+  console.log("TaskFlow App is loading");
   const [todos, setTodos] = useState(() => {
       const saved = localStorage.getItem("todos")
           return saved? JSON.parse(saved) : []
